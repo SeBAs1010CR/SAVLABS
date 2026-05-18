@@ -176,7 +176,7 @@ export default function Home() {
       </div>
 
       {/* Texto */}
-      <p className="-mt-30 text-zinc-400 tracking-[0.4em] text-sm">
+      <p className="mt-2 text-zinc-400 tracking-[0.4em] text-sm">
         TECHNOLOGY • DEVELOPMENT • GAMING
       </p>
 
