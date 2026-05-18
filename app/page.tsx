@@ -135,7 +135,7 @@ export default function Home() {
 >
 
   {/* Logos */}
-  <div className="flex flex-col items-center -space-y-20">
+  <div className="flex flex-col items-center">
 
     {/* SAV */}
     <motion.div
