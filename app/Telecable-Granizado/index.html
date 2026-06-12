@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+<title>Telecable</title>
+
+<style>
+
+body{
+    font-family:'Montserrat',sans-serif;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+
+    
+
+    background-image:url("Fondo.png");
+    background-size:cover;
+    background-position:center;
+}
+
+.content{
+
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.logo{
+
+    width:300px;
+
+    margin-top:50px;
+}
+
+.granizado-box{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.granizado{
+
+    width:280px;
+
+    animation:flotar 2s ease-in-out infinite;
+
+    filter:
+    drop-shadow(
+        0 20px 25px rgba(0,0,0,.20)
+    );
+}
+
+@keyframes flotar{
+
+    0%,100%{
+        transform:
+        translateY(0px)
+        rotate(-3deg);
+    }
+
+    50%{
+        transform:
+        translateY(-15px)
+        rotate(3deg);
+    }
+}
+
+.mensaje{
+
+    width:90%;
+
+    text-align:center;
+
+    color:white;
+
+    font-weight:900;
+
+    font-style:italic;
+
+    text-transform:uppercase;
+
+    line-height:1.05;
+
+    margin-bottom:60px;
+
+    text-shadow:
+        6px 6px 0 #d6001c;
+
+    letter-spacing:-1px;
+}
+
+.mensaje .linea1{
+
+    font-size:35px;
+}
+
+.mensaje .linea2{
+
+    font-size:35px;
+}
+
+.mensaje .premio{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:50px;
+
+    font-weight:700;
+}
+
+.mensaje{
+    animation:pulseText 1.8s ease-in-out infinite;
+}
+
+@keyframes pulseText{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+.premio{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:72px;
+
+    font-weight:900;
+
+    animation:pulsePremio 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsePremio{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="content">
+
+        <img
+        src="telecable-logo.png"
+        class="logo">
+
+        <div class="granizado-box">
+
+            <img
+            src="granizado.png"
+            class="granizado">
+
+        </div>
+
+        <div class="mensaje">
+
+            <div class="linea1">
+                MUESTRAME
+            </div>
+
+            <div class="linea2">
+                PARA RECIBIR TU
+            </div>
+
+            <span class="premio">
+                GRANIZADO GRATIS
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+
+
+window.addEventListener('load', () => {
+
+    fetch(
+        "https://script.google.com/macros/s/AKfycbyW47Ta6Yc89eMu14DHAo860oTM7ZSZvUSdPVxaPMPzsrUCUhibB3N7OtA8Y_c2TbP-dw/exec"
+    )
+    .catch(error => console.error(error));
+
+});
+
+
+</script>
+
+</body>
+</html>
