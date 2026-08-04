@@ -19,6 +19,7 @@ export default function About({ dict }: { dict: Dictionary }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="min-w-0"
         >
           <p className="mb-5 flex items-center gap-4 text-xs tracking-[0.45em] text-zinc-500">
             <span className="h-px w-10 bg-white/30" />
@@ -68,19 +69,19 @@ export default function About({ dict }: { dict: Dictionary }) {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="relative flex items-center justify-center"
+          className="relative flex min-w-0 items-center justify-center overflow-hidden"
         >
-          <div className="absolute h-[480px] w-[480px] rounded-full bg-white/[0.03] blur-2xl" />
-          <div className="absolute h-[340px] w-[340px] rounded-full border border-white/5" />
+          <div className="absolute h-[min(90vw,480px)] w-[min(90vw,480px)] rounded-full bg-white/[0.03] blur-2xl" />
+          <div className="absolute h-[min(70vw,340px)] w-[min(70vw,340px)] rounded-full border border-white/5" />
 
-          <div className="relative h-[440px] w-[440px]">
+          <div className="relative h-[min(80vw,440px)] w-[min(80vw,440px)]">
             <GeometricPulse />
           </div>
 
           <motion.div
             animate={{ y: [0, -16, 0], rotate: [0, 8, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -bottom-10 -left-6 h-[180px] w-[180px] opacity-60"
+            className="absolute -bottom-10 -left-6 h-[min(40vw,180px)] w-[min(40vw,180px)] opacity-60"
           >
             <GeometricPulse />
           </motion.div>

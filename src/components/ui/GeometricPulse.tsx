@@ -9,7 +9,7 @@ export default function GeometricPulse() {
         width="400"
         height="400"
         viewBox="0 0 400 400"
-        className="overflow-visible"
+        className="h-full w-full overflow-visible"
       >
         {/* Outer rotating square */}
         <motion.rect
