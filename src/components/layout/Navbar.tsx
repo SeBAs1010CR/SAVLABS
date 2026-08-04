@@ -29,7 +29,8 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur-xl">
+    <>
+      <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 md:px-8 py-5">
         <Link href={`/${lang}`}>
           <Image
@@ -104,6 +105,7 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
           </button>
         </div>
       </div>
+      </header>
 
       <AnimatePresence>
         {open && (
@@ -113,9 +115,9 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-[73px] z-40 flex flex-col bg-black/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 flex flex-col bg-black px-6 pt-28 pb-10 md:hidden"
           >
-            <nav className="flex flex-col px-6 pt-4">
+            <nav className="flex flex-col">
               {links.map((link, i) => (
                 <motion.div
                   key={link.label}
@@ -126,7 +128,7 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className={`block border-b border-white/10 py-5 text-2xl tracking-[0.2em] transition ${
+                    className={`block border-b border-white/10 py-4 text-xl tracking-[0.2em] transition ${
                       isActive(link.href)
                         ? "text-white"
                         : "text-zinc-400 hover:text-white"
@@ -138,7 +140,7 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
               ))}
             </nav>
 
-            <div className="mt-auto flex items-center justify-center pb-10">
+            <div className="mt-auto flex items-center justify-center">
               <div className="flex items-center rounded-full border border-white/10 p-1 text-[10px] tracking-[0.2em]">
                 <Link
                   href={enHref}
@@ -167,6 +169,6 @@ export default function Navbar({ dict }: { dict: Dictionary }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }

@@ -78,7 +78,7 @@ const en = {
     eyebrow: "SAVLABS GAMING",
     title: "GAMING",
     subtitle:
-      "Short-form content, captures, and fast-cut edits made for social and beyond.",
+      "Short-form content and fast-cut edits made for social and beyond.",
   },
   services: {
     eyebrow: "SAVLABS SERVICES",
@@ -216,7 +216,7 @@ const es: typeof en = {
     eyebrow: "SAVLABS GAMING",
     title: "GAMING",
     subtitle:
-      "Contenido de formato corto, capturas y ediciones de ritmo rápido para redes y más.",
+      "Contenido de formato corto y ediciones de ritmo rápido para redes y más.",
   },
   services: {
     eyebrow: "SERVICIOS SAVLABS",
