@@ -31,7 +31,7 @@ export default function ServicesSection({ dict }: { dict: Dictionary }) {
         {dict.services.eyebrow}
       </p>
 
-      <h1 className="text-5xl font-light tracking-[0.18em] md:text-8xl">
+      <h1 className="text-3xl font-light tracking-[0.14em] md:text-8xl md:tracking-[0.18em]">
         {dict.services.title}
       </h1>
 

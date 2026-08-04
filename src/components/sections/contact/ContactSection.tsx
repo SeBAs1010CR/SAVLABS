@@ -17,7 +17,7 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
 
         {/* Right */}
         <div className="flex flex-col">
-          <h1 className="mb-4 text-5xl tracking-[0.2em]">
+          <h1 className="mb-4 font-light text-3xl tracking-[0.14em] sm:text-4xl md:text-5xl md:tracking-[0.2em]">
             {contact.title}
           </h1>
 

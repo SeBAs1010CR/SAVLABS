@@ -35,7 +35,7 @@ export default function ProjectsSection({
             {dict.projects.eyebrow}
           </p>
 
-          <h1 className="text-5xl font-light tracking-[0.18em] md:text-8xl">
+          <h1 className="text-3xl font-light tracking-[0.12em] md:text-8xl md:tracking-[0.18em]">
             {dict.projects.title}
           </h1>
 
