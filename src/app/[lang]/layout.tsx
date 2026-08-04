@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron } from "next/font/google";
 import "../globals.css";
 import { defaultLocale, isLocale } from "@/lib/i18n";
+import { SITE_URL } from "@/lib/site";
 import WhatsAppBubble from "@/components/ui/WhatsAppBubble";
 
 const orbitron = Orbitron({
@@ -17,11 +18,9 @@ export async function generateMetadata({
   const locale = isLocale(lang) ? lang : defaultLocale;
   const description =
     locale === "es"
-      ? "Software a medida, plataformas web, automatización, IoT y electrónica — sistemas reales que mueven tu operación."
+      ? "Software a la medida, plataformas web, automatización, IoT y electrónica — sistemas reales que mueven tu operación."
       : "Custom software, web platforms, automation, IoT and electronics — real systems built to power your operation.";
-  const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : "http://localhost:3000";
+  const siteUrl = SITE_URL;
 
   return {
     title: "SAVLABS",
