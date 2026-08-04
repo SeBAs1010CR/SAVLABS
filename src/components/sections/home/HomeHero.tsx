@@ -188,6 +188,9 @@ export default function HomeHero({
           className="mt-8 max-w-xl text-sm leading-7 tracking-[0.08em] text-zinc-400 md:text-base"
         >
           {dict.home.heroSubtitle}
+          <span className="mt-2 block text-white">
+            {dict.home.heroSubtitle2}
+          </span>
         </motion.p>
 
         <motion.div

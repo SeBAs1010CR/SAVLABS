@@ -26,7 +26,8 @@ const en = {
     eyebrow: "TECHNOLOGY • DEVELOPMENT • GAMING",
     heroTitle: "SAVLABS",
     heroSubtitle:
-      "Custom software, web platforms, automation, IoT and electronics — real systems built to power your operation.",
+      "Custom software, web platforms, automation, IoT and electronics.",
+    heroSubtitle2: "Real systems built to power your operation.",
     heroPrimary: "VIEW PROJECTS",
     heroSecondary: "START A PROJECT",
     marquee: [
@@ -164,7 +165,8 @@ const es: typeof en = {
     eyebrow: "TECNOLOGÍA • DESARROLLO • GAMING",
     heroTitle: "SAVLABS",
     heroSubtitle:
-      "Software a medida, plataformas web, automatización, IoT y electrónica — sistemas reales que mueven tu operación.",
+      "Software a la medida, plataformas web, automatización, IoT y electrónica.",
+    heroSubtitle2: "Sistemas reales que mueven tu operación.",
     heroPrimary: "VER PROYECTOS",
     heroSecondary: "EMPEZAR UN PROYECTO",
     marquee: [
@@ -185,12 +187,12 @@ const es: typeof en = {
     aboutEyebrow: "QUÉ HACEMOS",
     aboutTitle: "SISTEMAS HECHOS A LA MEDIDA",
     aboutText: [
-      "SAVLABS diseña y construye sistemas digitales desde cero: software a medida, plataformas web, herramientas de automatización y experiencias interactivas adaptadas a cada cliente.",
+      "SAVLABS diseña y construye sistemas digitales desde cero: software a la medida, plataformas web, herramientas de automatización y experiencias interactivas adaptadas a cada cliente.",
       "Trabajamos pegados a la idea — desde el primer boceto hasta el despliegue final — para que cada desarrollo encaje con la operación exactamente como se necesita.",
     ],
     aboutList: [
       {
-        title: "Software a medida",
+        title: "Software a la medida",
         desc: "Sistemas diseñados alrededor de tu flujo de trabajo, y no al revés.",
       },
       {
