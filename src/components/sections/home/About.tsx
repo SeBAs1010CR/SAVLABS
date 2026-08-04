@@ -25,7 +25,7 @@ export default function About({ dict }: { dict: Dictionary }) {
             {dict.home.aboutEyebrow}
           </p>
 
-          <h2 className="text-3xl font-light tracking-[0.16em] text-white md:text-5xl">
+          <h2 className="text-2xl font-light tracking-[0.12em] text-white md:text-5xl md:tracking-[0.16em]">
             {dict.home.aboutTitle}
           </h2>
 

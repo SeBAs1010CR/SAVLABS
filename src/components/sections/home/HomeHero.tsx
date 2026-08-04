@@ -162,20 +162,20 @@ export default function HomeHero({
             initial={{ opacity: 0, scale: 0.92, filter: "blur(14px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative text-[clamp(3.2rem,14vw,11rem)] font-light leading-none tracking-[0.16em] text-white [text-shadow:0_0_30px_rgba(255,255,255,0.45),0_0_90px_rgba(34,211,238,0.35)]"
+            className="relative text-[clamp(2.6rem,11vw,11rem)] font-light leading-none tracking-[0.12em] text-white [text-shadow:0_0_30px_rgba(255,255,255,0.45),0_0_90px_rgba(34,211,238,0.35)] md:tracking-[0.16em]"
           >
             {dict.home.heroTitle}
           </motion.h1>
 
           <span
             aria-hidden
-            className="animate-[glitch-cyan_4s_infinite_linear] pointer-events-none absolute inset-0 select-none text-[clamp(3.2rem,14vw,11rem)] font-light leading-none tracking-[0.16em] text-cyan-400 mix-blend-screen"
+            className="animate-[glitch-cyan_4s_infinite_linear] pointer-events-none absolute inset-0 select-none text-[clamp(2.6rem,11vw,11rem)] font-light leading-none tracking-[0.12em] text-cyan-400 mix-blend-screen md:tracking-[0.16em]"
           >
             {dict.home.heroTitle}
           </span>
           <span
             aria-hidden
-            className="animate-[glitch-magenta_5s_infinite_linear] pointer-events-none absolute inset-0 select-none text-[clamp(3.2rem,14vw,11rem)] font-light leading-none tracking-[0.16em] text-fuchsia-500 mix-blend-screen"
+            className="animate-[glitch-magenta_5s_infinite_linear] pointer-events-none absolute inset-0 select-none text-[clamp(2.6rem,11vw,11rem)] font-light leading-none tracking-[0.12em] text-fuchsia-500 mix-blend-screen md:tracking-[0.16em]"
           >
             {dict.home.heroTitle}
           </span>

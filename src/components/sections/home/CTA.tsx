@@ -16,7 +16,7 @@ export default function CTA({ dict, lang }: { dict: Dictionary; lang: string }) 
           {dict.home.ctaEyebrow}
         </p>
 
-        <h2 className="text-4xl font-light leading-tight tracking-[0.12em] text-white md:text-6xl">
+        <h2 className="text-3xl font-light leading-tight tracking-[0.08em] text-white md:text-6xl md:tracking-[0.12em]">
           {dict.home.ctaTitle}
         </h2>
 

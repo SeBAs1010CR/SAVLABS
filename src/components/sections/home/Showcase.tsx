@@ -32,7 +32,7 @@ export default function Showcase({
             <p className="mb-4 text-xs tracking-[0.45em] text-zinc-500">
               {dict.home.selectedEyebrow}
             </p>
-            <h2 className="text-3xl font-light tracking-[0.18em] text-white md:text-5xl">
+            <h2 className="text-2xl font-light tracking-[0.14em] text-white md:text-5xl md:tracking-[0.18em]">
               {dict.home.selectedTitle}
             </h2>
             <p className="mt-4 max-w-md text-sm leading-7 tracking-[0.08em] text-zinc-400">
