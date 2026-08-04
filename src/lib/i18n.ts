@@ -141,6 +141,9 @@ const en = {
     email: "EMAIL",
     message: "MESSAGE",
     send: "SEND",
+    sending: "SENDING...",
+    sent: "MESSAGE SENT",
+    error: "ERROR SENDING. TRY AGAIN.",
   },
   footer: "© 2026 SAVLABS • ALL RIGHTS RESERVED",
 };
@@ -280,6 +283,9 @@ const es: typeof en = {
     email: "CORREO",
     message: "MENSAJE",
     send: "ENVIAR",
+    sending: "ENVIANDO...",
+    sent: "MENSAJE ENVIADO",
+    error: "ERROR AL ENVIAR. INTENTÁ DE NUEVO.",
   },
   footer: "© 2026 SAVLABS • TODOS LOS DERECHOS RESERVADOS",
 };
