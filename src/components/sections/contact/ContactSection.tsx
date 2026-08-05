@@ -9,7 +9,7 @@ type Status = "idle" | "sending" | "sent" | "error";
 export default function ContactSection({ dict }: { dict: Dictionary }) {
   const contact = dict.contact;
   const [status, setStatus] = useState<Status>("idle");
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", type: "", message: "" });
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -24,14 +24,15 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
 
       if (!res.ok) throw new Error("send failed");
       setStatus("sent");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", type: "", message: "" });
     } catch {
       setStatus("error");
     }
   };
 
-  const set = (field: keyof typeof form) =>
-    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+  const set =
+    (field: keyof typeof form) =>
+    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
       setForm((prev) => ({ ...prev, [field]: event.target.value }));
 
   return (
@@ -71,6 +72,22 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
               onChange={set("email")}
               className="w-full border border-white/20 bg-transparent px-5 py-4 outline-none transition focus:border-white"
             />
+
+            <select
+              required
+              value={form.type}
+              onChange={set("type")}
+              className="w-full border border-white/20 bg-black px-5 py-4 text-white outline-none transition focus:border-white [&>option]:bg-black [&>option]:text-white"
+            >
+              <option value="" disabled>
+                {contact.typePlaceholder}
+              </option>
+              {contact.typeOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
 
             <textarea
               required

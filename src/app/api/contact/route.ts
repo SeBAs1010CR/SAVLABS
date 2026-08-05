@@ -13,7 +13,12 @@ function escapeHtml(value: string): string {
 }
 
 export async function POST(request: NextRequest) {
-  let body: { name?: string; email?: string; message?: string };
+  let body: {
+    name?: string;
+    email?: string;
+    type?: string;
+    message?: string;
+  };
   try {
     body = await request.json();
   } catch {
@@ -22,6 +27,7 @@ export async function POST(request: NextRequest) {
 
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();
+  const type = (body.type ?? "").trim();
   const message = (body.message ?? "").trim();
 
   if (!name || !email || !message) {
@@ -60,13 +66,19 @@ export async function POST(request: NextRequest) {
       to,
       replyTo: email,
       subject: `Nuevo mensaje de ${name} — savlabscr.com`,
-      text: `Nombre: ${name}\nCorreo: ${email}\n\n${message}`,
+      text: `Nombre: ${name}\nCorreo: ${email}${
+        type ? `\nTipo de proyecto: ${type}` : ""
+      }\n\n${message}`,
       html: `
         <div style="font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;padding:24px">
           <div style="max-width:560px;margin:0 auto;background:#ffffff;border-radius:8px;padding:24px">
             <h2 style="margin:0 0 16px;color:#111">Nuevo mensaje — savlabscr.com</h2>
             <p><strong>Nombre:</strong> ${escapeHtml(name)}</p>
-            <p><strong>Correo:</strong> ${escapeHtml(email)}</p>
+            <p><strong>Correo:</strong> ${escapeHtml(email)}</p>${
+        type
+          ? `\n            <p><strong>Tipo de proyecto:</strong> ${escapeHtml(type)}</p>`
+          : ""
+      }
             <div style="margin-top:16px;padding:16px;background:#fafafa;border-radius:6px;color:#333">
               ${escapeHtml(message).replace(/\n/g, "<br/>")}
             </div>

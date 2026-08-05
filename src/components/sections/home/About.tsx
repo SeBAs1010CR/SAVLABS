@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Grid from "@/components/ui/Grid";
 import Glow from "@/components/ui/Glow";
 import GeometricPulse from "@/components/ui/GeometricPulse";
+import PcbBoard from "@/components/ui/PcbBoard";
 import type { Dictionary } from "@/lib/i18n";
 
 export default function About({ dict }: { dict: Dictionary }) {
@@ -85,6 +86,10 @@ export default function About({ dict }: { dict: Dictionary }) {
           >
             <GeometricPulse />
           </motion.div>
+
+          <div className="absolute -bottom-5 -right-5 h-[min(52vw,250px)] w-[min(52vw,250px)] -rotate-6 opacity-80 drop-shadow-[0_0_25px_rgba(34,211,238,0.15)]">
+            <PcbBoard className="h-full w-full" />
+          </div>
 
           <div className="absolute right-2 top-6 flex flex-col gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee]" />
