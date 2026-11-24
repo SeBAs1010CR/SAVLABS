@@ -116,7 +116,8 @@ main {
     min-height: 3900px;
     background-image: url("camino.jpg");
     background-attachment: scroll;
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
     background-position: center;
 }
 
