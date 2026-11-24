@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Actividad sobre los costarriqueñismos</title>
+	
+	<link rel="stylesheet" href="estilo.css">
+	
+	<script>
+		function comprobar ()
+		
+		{
+		var puntos = 0; 
+		
+		
+			var respuesta = document.getElementById('r1').value.toLowerCase();
+			
+			if (respuesta == 'chiva')
+				{ document.getElementById('r1').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+				
+			else { document.getElementById('r1').style.backgroundColor = "firebrick"; }
+			
+			
+			var respuesta = document.getElementById('r2').value.toLowerCase();
+			
+			if (respuesta == 'birra')
+				{ document.getElementById('r2').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+				
+			else { document.getElementById('r2').style.backgroundColor = "firebrick"; }
+			
+			
+			var respuesta = document.getElementById('r3').value.toLowerCase();
+			
+			if (respuesta == 'aprete')
+				{ document.getElementById('r3').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+				
+			else { document.getElementById('r3').style.backgroundColor = "firebrick"; }
+			
+			
+			var respuesta = document.getElementById('r4').value.toLowerCase();
+			
+			if (respuesta == 'chineado' || respuesta == 'chineada')
+				{ document.getElementById('r4').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+				
+			else { document.getElementById('r4').style.backgroundColor = "firebrick"; }
+			
+			
+			var respuesta = document.getElementById('r5').value.toLowerCase();
+			
+			if (respuesta == '¿qué es la vara?' || respuesta == 'qué es la vara' || respuesta == 'que es la vara' || respuesta == 'qué es la vara?' || respuesta == 'que es la vara?' || respuesta == '¿que es la vara?')
+				{ document.getElementById('r5').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+				
+			else { document.getElementById('r5').style.backgroundColor = "firebrick"; }
+			
+			
+			var respuesta = document.getElementById('r6').value.toLowerCase();
+			if (respuesta == 'suave un toque' || respuesta == 'suaveuntoque')
+				{ document.getElementById('r6').style.backgroundColor = "#174D36"; puntos = puntos+1;}	
+			else { document.getElementById('r6').style.backgroundColor = "firebrick"; }
+			
+			var respuesta = document.getElementById('r7').value.toLowerCase();
+			if (respuesta == 'brete')
+				{ document.getElementById('r7').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+			else { document.getElementById('r7').style.backgroundColor = "firebrick"; }
+			
+			var respuesta = document.getElementById('r8').value.toLowerCase();
+			if (respuesta == 'pura vida' || respuesta == 'puravida')
+				{ document.getElementById('r8').style.backgroundColor = "#174D36"; puntos = puntos+1;}
+			else { document.getElementById('r8').style.backgroundColor = "firebrick"; }
+			
+			document.getElementById("pts").innerHTML = puntos + " de 8 puntos";
+		}
+	
+	</script>
+	
+	<script>
+	function mensaje()
+		{
+			window.alert('¡Ahora sí, ya puede decir que conoce un poquito más del español tico! Pero cuidado, todavía quedan muchas expresiones por descubrir. / Now you can say you know a little more about Costa Rican Spanish! But watch out, there are still plenty of expressions to discover.');
+		}
+	</script>
+	
+</head>
+
+
+<body>
+
+	<header>
+		<div class="imagen2">
+			<img src="oso2.png" alt="oso">
+
+			<h1>¡Ponga a prueba sus conocimientos sobre costarriqueñismos!</h1>
+
+			<img src="guaria3.png" alt="Guaria">
+		</div>
+		
+		<h2>Test how much you know about Costa Rican idioms!</h3>
+	</header>
+	
+	<nav class="juego1">
+        <div class="menu"> <a href="inicio.html">Inicio / Home Page</a></div> 
+		<div class="menu"> <a href="definicion.html">Definición/ Definition</a></div>
+        <div class="menu"> <a href="palabras.html">Palabras / Words</a></div>
+        <div class="menu"> <a href="expresiones.html">Expresiones / Expressions</a></div>
+		<div class="menu1"> <a href="juego.html">¡Adivine la palabra!/ Guess the word! </a></div>
+		<div class="menu"> <a href="quiz.html">¡Encuentre el contexto! / Find the context!</a></div>
+    </nav>
+	
+	<main class="juego">
+	<div class="divjuego">
+		<p class="juego2">¿Está listo para enfrentarse a un reto lleno de palabras y expresiones costarricenses? <br>
+		¡Demuestre lo que sabe y vea cuántas puede acertar!</p>
+		<p class="juego2">Are you ready for a challenge full of Costa Rican words and expressions? <br>
+		Show what you know and see how many you can get right!</p>
+		<p class="juego3">Instrucciones: Escriba la palabra o expresión que corresponda con la definición que se le presenta. <br>
+		Instructions: Fill in the word or expression that best matches the given definition.</p>
+	</div>
+	
+	<div class="palabras2">
+			<p class="juego3">Bonito, elegante, agradable / Nice, cool, awesome <input type="text" id="r1" size="10" value=""> </p>
+			<p class="juego3">Cerveza / Beer <input type="text" id="r2" size="10" value=""> </p>
+			<p class="juego3"> Beso apasionado y prolongado entre dos personas, generalmente sin compromiso formal. / A passionate and prolonged kiss or make-out session between two people, usually without a formal commitment. <input type="text" id="r3" size="10" value=""> </p>
+			<p class="juego3">Mimado, consentido,delicado / Spoiled, pampered, sensitive <input type="text" id="r4" size="10" value=""> </p>
+			<p class="juego3">Pregunta confrontativa que equivale a ¿Cuál es el problema? / A confrontational or inquisitive question equivalent to What's the deal? <input type="text" id="r5" size="10" value=""> </p>
+			<p class="juego3">Expresión utilizada para pedir a alguien que espere un momento. / Hold on a second, wait a minute, hang on. <input type="text" id="r6" size="10" value=""> </p>
+			<p class="juego3">Trabajo, oficio / Work, job, occupation<input type="text" id="r7" size="10" value=""> </p>
+			<p class="juego3">Frase insignia de Costa Rica. Expresa bienestar, optimismo y gratitud. / Costa Rica’s ultimate trademark phrase. It expresses well-being, optimism, and gratitude. <input type="text" id="r8" size="10" value=""> </p>
+
+		<p><button onClick="comprobar()">Revisar / Check</button></p>
+
+		<p id="pts"></p>
+
+		<p onContextMenu="mensaje()"></p>
+		<button onClick="mensaje()" class="mensaje">
+		Haga clic aquí para un mensaje sorpresa / Click here for a surprise message.
+		</button>
+
+</div>
+
+	</main>
+
+
+</body>
+
+
+</html>

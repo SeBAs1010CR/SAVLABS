@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Quiz sobre los costarriqueñismos</title>
+	
+	<link rel="stylesheet" href="estilo.css">
+	
+	<script>
+	
+	function aprete1()
+	{document.getElementById("aprete").innerHTML = "aprete"; }
+	
+	function brete1()
+	{document.getElementById("brete").innerHTML = "brete"; }
+	
+	function tuanis1()
+	{document.getElementById("tuanis").innerHTML = "tuanis"; }
+	
+	function birra1()
+	{document.getElementById("birra").innerHTML = "birra"; }
+	
+	function suave1()
+	{document.getElementById("suave").innerHTML = "suave un toque"; }
+	
+	function chile1()
+	{document.getElementById("chile").innerHTML = "al chile"; }
+	
+	function vara1()
+	{document.getElementById("vara").innerHTML = "¿Qué es la vara?"; }
+	
+	function palo1()
+	{document.getElementById("palo").innerHTML = "detrás del palo"; }
+	</script>
+	
+	<script>
+	
+	function calcular()
+	{
+	var total=0;
+	
+	if (document.getElementById('1a').checked){
+	total = total + Number(document.getElementById('1a').value);
+	}
+	else if (document.getElementById('1b').checked){
+	total = total + Number(document.getElementById('1b').value);
+	}
+	else if (document.getElementById('1c').checked) {
+	total = total + Number(document.getElementById('1c').value);
+	}
+	
+	if (document.getElementById('2a').checked){
+	total = total + Number(document.getElementById('2a').value);
+	}
+	else if (document.getElementById('2b').checked){
+	total = total + Number(document.getElementById('2b').value);
+	}
+	else if (document.getElementById('2c').checked){
+	total = total + Number(document.getElementById('2c').value);
+	}
+	
+	if (document.getElementById('3a').checked){
+	total = total + Number(document.getElementById('3a').value);
+	}
+	else if (document.getElementById('3b').checked){
+	total = total + Number(document.getElementById('3b').value);
+	}
+	else if (document.getElementById('3c').checked){
+	total = total + Number(document.getElementById('3c').value);
+	}
+	
+	if (document.getElementById('4a').checked){
+	total = total + Number(document.getElementById('4a').value);
+	}
+	else if (document.getElementById('4b').checked){
+	total = total + Number(document.getElementById('4b').value);
+	}
+	else if (document.getElementById('4c').checked){
+	total = total + Number(document.getElementById('4c').value);
+	}
+	
+	if (document.getElementById('5a').checked){
+	total = total + Number(document.getElementById('5a').value);
+	}
+	else if (document.getElementById('5b').checked){
+	total = total + Number(document.getElementById('5b').value);
+	}
+	else if (document.getElementById('5c').checked){
+	total = total + Number(document.getElementById('5c').value);
+	}
+	
+	if (document.getElementById('6a').checked){
+	total = total + Number(document.getElementById('6a').value);
+	}
+	else if (document.getElementById('6b').checked){
+	total = total + Number(document.getElementById('6b').value);
+	}
+	else if (document.getElementById('6c').checked){
+	total = total + Number(document.getElementById('6c').value);
+	}
+	
+	if (document.getElementById('7a').checked){
+	total = total + Number(document.getElementById('7a').value);
+	}
+	else if (document.getElementById('7b').checked){
+	total = total + Number(document.getElementById('7b').value);
+	}
+	else if (document.getElementById('7c').checked){
+	total = total + Number(document.getElementById('7c').value);
+	}
+	
+	if (document.getElementById('8a').checked){
+	total = total + Number(document.getElementById('8a').value);
+	}
+	else if (document.getElementById('8b').checked){
+	total = total + Number(document.getElementById('8b').value);
+	}
+	else if (document.getElementById('8c').checked){
+	total = total + Number(document.getElementById('8c').value);
+	}
+	
+	if (total==8)
+	{document.getElementById("resultado").innerHTML = '¡Al chile, es todo un experto! / Seriously, you are an expert!';}
+	else if (total>=6)
+	{document.getElementById("resultado").innerHTML = '¡Va volando! Solo te faltan unas cuantas. / You are doing great! Just a few more to go.';}
+	else if (total>=4)
+	{document.getElementById("resultado").innerHTML = '¡Va por buen camino! Pero todavía hay algunas que se le escapan. / You are on the right track! But there are still a few you are missing.';}
+	else
+	{document.getElementById("resultado").innerHTML = '¡Uy! Parece que todavía le falta calle. ¡Vuelva a intentarlo! /  Oops! Looks like you still have a lot to learn. Give it another try!';}
+	}
+	</script>
+	
+	<script>
+	function mensaje()
+		{
+			window.alert('¡Reto superado! O al menos eso esperamos... Ahora lleva un poquito más de Costa Rica en su vocabulario. / Challenge completed! Or at least, we hope so... Now you have got a little more Costa Rica in your vocabulary.');
+		}
+	</script>
+	
+</head>
+
+
+<body>
+
+	<header>
+		<div class="imagen">
+			<img src="oso2.png" alt="oso">
+
+			<h1>Cada palabra tiene su lugar ¿Puede encontrarlo?</h1>
+
+			<img src="guaria3.png" alt="Guaria">
+		</div>
+		
+		<h2>Every Word Has Its Place, Can You Find It?</h3>
+	</header>
+	
+	<nav class="quiz1">
+        <div class="menu"> <a href="inicio.html">Inicio / Home Page</a></div> 
+		<div class="menu"> <a href="definicion.html">Definición/ Definition</a></div>
+        <div class="menu"> <a href="palabras.html">Palabras / Words</a></div>
+        <div class="menu"> <a href="expresiones.html">Expresiones / Expressions</a></div>
+		<div class="menu"> <a href="juego.html">¡Adivine la palabra!/ Guess the word! </a></div>
+		<div class="menu1"> <a href="quiz.html">¡Encuentre el contexto! / Find the context!</a></div>
+		
+    </nav>
+	
+	<main class="quiz"> 
+		<div class="divquiz">
+			<p class="juego2">Las palabras y expresiones costarricenses pueden tener diferentes significados y utilizarse en distintas situaciones. ¡Es hora de poner a prueba qué tanto conoce sobre nuestra forma de hablar!</p>
+			<p class="juego2">Costa Rican words and expressions can have different meanings and be used in various situations. It's time to test how much you know about the way we speak!</p>
+			<p class="juego3">Instrucciones: Marque con una X la oración en la que considere que la palabra o expresión se podría utilizar correctamente.
+			<p class="juego3">Instructions:Mark an X next to the sentence in which you think the word or expression could be used correctly.</p>
+		</div>
+		
+		<div class="quiz2">
+			
+				<p class= "quiz3">1. ¿En cuál contexto queda mejor esta palabra? / Which context best suits this word?</p>
+				<p id="aprete" class= "quiz3">Aquí aparece la palabra / The word appears here.</p>
+				<button onClick="aprete1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="1a" name="1" value="1"> La pareja se dio un beso apasionado y prolongado durante la fiesta. / The couple shared a passionate and prolonged kiss during the party.<br>
+				<input type="radio" id="1b" name="1" value="0"> El equipo celebró su victoria después del partido. / The couple shared a passionate and prolonged kiss during the party.<br>
+				<input type="radio" id="1c" name="1" value="0"> Los estudiantes tuvieron que entregar un trabajo antes del viernes. / The students had to submit an assignment before Friday. </p>
+				
+				<p class= "quiz3">2. ¿En cuál contexto queda mejor esta palabra? / Which context best suits this word?</p>
+				<p id="brete" class= "quiz3">Aquí aparece la palabra / The word appears here.</p>
+				<button onClick="brete1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="2a" name="2" value="0"> La familia decidió viajar a la playa durante las vacaciones. / The family decided to travel to the beach during their vacation.<br>
+				<input type="radio" id="2b" name="2" value="0"> Los estudiantes visitaron un museo durante la excursión. / The students visited a museum during the field trip.<br>
+				<input type="radio" id="2c" name="2" value="1"> Mi hermano consiguió un empleo en una empresa de tecnología. / My brother got a job at a technology company.</p>
+				
+				
+				<p class= "quiz3">3. ¿En cuál contexto queda mejor esta palabra? / Which context best suits this word?</p>
+				<p id="tuanis" class= "quiz3">Aquí aparece la palabra / The word appears here.</p>
+				<button onClick="tuanis1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="3a" name="3" value="0">El joven estaba preocupado por una noticia inesperada.<br>
+				<input type="radio" id="3b" name="3" value="1">La película fue excelente y todos disfrutaron mucho verla. <br>
+				<input type="radio" id="3c" name="3" value="0"> El trabajador estaba agotado después de una jornada muy larga.</p>
+				
+				<p class= "quiz3">4. ¿En cuál contexto queda mejor esta palabra? / Which context best suits this word?</p>
+				<p id="birra" class= "quiz3">Aquí aparece la palabra / The word appears here.</p>
+				<button onClick="birra1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="4a" name="4" value="0">Mi hermana compró una botella de agua para el viaje. / My sister bought a bottle of water for the trip. <br>
+				<input type="radio" id="4b" name="4" value="0">Mi padre preparó un jugo natural de naranja. / My father prepared a fresh orange juice. <br>
+				<input type="radio" id="4c" name="4" value="1"> Los invitados disfrutaron de una bebida alcohólica elaborada a partir de cereales. / The guests enjoyed an alcoholic beverage made from grains.</p>
+				
+				<p class= "quiz3">5. ¿En cuál contexto queda mejor esta expresión? / Which context best suits this expression?</p>
+				<p id="suave" class= "quiz3">Aquí aparece la expression / The expression appears here.</p>
+				<button onClick="suave1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="5a" name="5" value="1">Espera un momento, necesito encontrar mis documentos antes de salir. / Hold on a second, I need to find my documents before leaving. <br>
+				<input type="radio" id="5b" name="5" value="0">El equipo ganó el campeonato después de una larga temporada. / The team won the championship after a long season.<br>
+				<input type="radio" id="5c" name="5" value="0"> La mujer caminó durante varias horas por el sendero. / The woman walked for several hours along the trail.</p>
+				
+				<p class= "quiz3">6. ¿En cuál contexto queda mejor esta expresión? / Which context best suits this expression?</p>
+				<p id="chile" class= "quiz3">Aquí aparece la expresión / The expression appears here.</p>
+				<button onClick="chile1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="6a" name="6" value="0">El hombre decidió reparar su automóvil antes de venderlo. / The man decided to repair his car before selling it. <br>
+				<input type="radio" id="6b" name="6" value="0">Los estudiantes organizaron una actividad para recaudar fondos. / The students organized an activity to raise funds.<br>
+				<input type="radio" id="6c" name="6" value="1"> De verdad, no fui yo quien rompió ese objeto. / Seriously, I wasn't the one who broke that object.</p>
+				
+				<p class= "quiz3">7. ¿En cuál contexto queda mejor esta expresión? / Which context best suits this expression?</p>
+				<p id="vara" class= "quiz3">Aquí aparece la expresión / The expression appears here.</p>
+				<button onClick="vara1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="7a" name="7" value="0">El estudiante entregó su tarea antes de la fecha límite. / The student submitted his assignment before the deadline. <br>
+				<input type="radio" id="7b" name="7" value="1">El joven estaba molesto por las constantes interrupciones y preguntó cuál era el problema. / The young man was annoyed by the constant interruptions and asked what the problem was.<br>
+				<input type="radio" id="7c" name="7" value="0"> El hombre saludó cordialmente a sus compañeros de trabajo. / The man warmly greeted his coworkers.</p>
+				
+				<p class= "quiz3">8. ¿En cuál contexto queda mejor esta expresión? / Which context best suits this expression?</p>
+				<p id="palo" class= "quiz3">Aquí aparece la expresión / The expression appears here.</p>
+				<button onClick="palo1()">Presione para conocer la palabra / Click to reveal the word.</button>
+				<p class= "quiz3"><input type="radio" id="8a" name="8" value="0">Los turistas disfrutaron de una visita guiada por el museo. / The tourists enjoyed a guided tour of the museum. <br>
+				<input type="radio" id="8b" name="8" value="0">El médico recomendó descansar durante varios días. / The doctor recommended resting for several days.<br>
+				<input type="radio" id="8c" name="8" value="1"> El empleado no tenía conocimiento de los cambios que se habían realizado en la empresa. / The employee had no knowledge of the changes that had been made at the company.</p>
+
+		<button onClick="calcular()">Revisar / Check</button>
+		<p id="resultado" class="resultado"></p>
+
+		<p onContextMenu="mensaje()"></p>
+		<button onClick="mensaje()" class="mensaje">
+		Haga clic aquí para un mensaje sorpresa / Click here for a surprise message.
+		</button>
+		
+		<p class="juego3"> ¿Quiere conocer cómo hablamos los ticos en la vida real? Dese una vuelta por estos videos, pase un rato divertido y descubra cómo usamos nuestras palabras y expresiones en diferentes contextos. ¡Incluso puede encontrarse con palabras que no aparecen por aquí... y alguna que otra mala palabra! <br> Don't just take our word for it, hear it for yourself! Want to discover how Costa Ricans really speak? Check out these videos, have some fun, and see how we use our words and expressions in different situations. You might even come across words that aren't featured here... and a few swear words too! <p>
+		
+		<select onChange="window.location.href=this.value">
+			<option>--Escoja un video / Choose a video--</option>
+			<option value="https://www.youtube.com/watch?v=7quQIe3PFUY">¿Dónde está la hielera? / Where is the cooler?</option>
+			<option value="https://www.youtube.com/watch?v=EoscaDo_jnU">Me tenés harto / I am sick of you </option>
+			<option value="https://www.youtube.com/watch?v=jfB8HFBLyyg">Va jalando todo / Let it all go</option>
+			<option value="https://www.youtube.com/watch?v=Egu4uLB23To">WAZE</option>
+			<option value="https://www.youtube.com/watch?v=0MGkcv_5mv0">Me golpearon / They punched me</option>	
+		</select>
+			
+		</div>
+
+	</main>
+
+
+</body>
+
+
+</html>
