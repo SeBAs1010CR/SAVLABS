@@ -113,7 +113,7 @@ main {
 .quiz{
 	margin-left: 200px;
     padding: 1em;
-    min-height: 0;
+    min-height: 3600px;
     background-image: url("camino.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -125,7 +125,7 @@ main {
 	float: left;
     background-color: #E1E9D9;
     width: 170px;
-    min-height: 0;
+    min-height: 3600px;
     margin: 0;
     padding: 1em;
 }
