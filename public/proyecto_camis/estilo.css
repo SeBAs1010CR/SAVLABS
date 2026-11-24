@@ -115,7 +115,7 @@ main {
     padding: 1em;
     min-height: 3300px;
     background-image: url("camino.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
 }
